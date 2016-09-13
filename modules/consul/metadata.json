@@ -1,0 +1,14 @@
+{
+  "name": "iainb-consul",
+  "version": "0.1.0",
+  "author": "iainb",
+  "summary": "Runs consul in a docker container",
+  "license": "Apache 2.0",
+  "source": "",
+  "project_page": null,
+  "issues_url": null,
+  "dependencies": [
+    {"name":"garethr/docker","version_requirement":">= 4.0.0"}
+  ]
+}
+

@@ -11,4 +11,4 @@ mod 'puppetlabs/apt'
 mod 'stahnma/epel'
 #mod 'garethr/docker'
 mod 'garethr/docker', :git => "https://github.com/garethr/garethr-docker.git"
-mod 'stankevich/python'
+#mod 'stankevich/python'

@@ -8,6 +8,7 @@
       - { guest: 80, host: 8080 }
   ram: 2048
   shell_commands: 
-      - { shell: 'yum install -y wget git lvm2 device-mapper-libs' }
+      - { shell: 'yum install -y wget nano git lvm2 device-mapper-libs' }
       - { shell: '/opt/puppet/bin/gem install r10k && ln -s /opt/puppet/bin/r10k /usr/bin/r10k || true'}
       - { shell: 'cp /home/vagrant/node-01/Puppetfile /tmp && cd /tmp && r10k puppetfile install --verbose' }
+      - { shell: 'cp /home/vagrant/node-01/modules/* -R /tmp/modules' }

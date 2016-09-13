@@ -1,2 +1,2 @@
-node 'node-01' { include docker }
+node 'node-01' { include consul }
 
