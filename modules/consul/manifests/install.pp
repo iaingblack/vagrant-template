@@ -1,5 +1,7 @@
 class consul::install {
 
+  notify{"INSTALLING CONSUL":}->
+
   package { 'device-mapper-libs':
     ensure => installed,
   } ->

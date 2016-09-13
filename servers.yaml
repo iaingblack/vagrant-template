@@ -6,6 +6,7 @@
   name: node-01
   forward_ports:
       - { guest: 80, host: 8080 }
+      - { guest: 8500, host: 8500 }
   ram: 2048
   shell_commands: 
       - { shell: 'yum install -y wget nano git lvm2 device-mapper-libs' }
