@@ -19,7 +19,7 @@ class consul::install {
     image    => $consul::docker_image,
     hostname => $consul::container_hostname,
     command  => "-server --advertise ${consul::consul_advertise} -bootstrap-expect ${consul::consul_bootstrap_expect}",
-    ports    => ['8301:8301', '8301:8301/udp', '8302:8302', '8302:8302/udp', '8400:8400', '53:53/udp']
+    ports    => ['8301:8301', '8301:8301/udp', '8302:8302', '8302:8302/udp', '8400:8400', '8500:8500', '53:53/udp']
   }
 
 }

@@ -5,6 +5,6 @@ class consul::params {
   $docker_image = 'scottyc/consul'
   $container_hostname = 'consul'
   $consul_advertise = $::ipaddress_enp0s8
-  $consul_bootstrp_expect = '1'
+  $consul_bootstrap_expect = '1'
 
 }
